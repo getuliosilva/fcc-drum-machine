@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.0b132740.css","mappings":"AAAA,WAEI,SAAU,CADV,2BAEJ,CAEA,cACI,8CACJ","sources":["global.css"],"sourcesContent":[".monospace {\n    font-family: 'Monoton', cursive;\n    color: red;\n}\n\n.display-font {\n    font-family: 'Big Shoulders Stencil Text', cursive;\n}"],"names":[],"sourceRoot":""}
