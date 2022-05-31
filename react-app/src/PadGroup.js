@@ -89,7 +89,7 @@ function PadGroup(props) {
     return () => {
       document.removeEventListener('keydown', handleKeyEvent)
     }
-  }, [])
+  }, [props])
 
   useEffect( () => {
     document.addEventListener('keyup', handleKeyEvent)
@@ -110,7 +110,7 @@ function PadGroup(props) {
     return () => {
       document.removeEventListener('keyup', handleKeyEvent)
     }
-  }, [])
+  }, [props])
 
   const drumPadGroup = keyArray.map( element => {
     return <DrumPad
