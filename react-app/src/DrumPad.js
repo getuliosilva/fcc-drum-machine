@@ -15,6 +15,15 @@ function DrumPad(props) {
     audioRef.current.currentTime = 0
   }
 
+  function handleMouseDown(){
+    playAudio()
+    props.handleDisplay()
+  }
+
+  function handleMouseUp(){
+    props.returnDisplay()
+  }
+
   return (
     <Row className='justify-content-center col-3 m-1'>
       <Button
@@ -22,7 +31,8 @@ function DrumPad(props) {
         variant='primary'
         size='lg'
         className={props.isClicked ? 'drum-pad text-center btn-danger border border-dark active' : 'drum-pad text-center btn-danger border border-dark'}
-        onClick={playAudio}
+        onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
       >
         {props.label}
         <audio

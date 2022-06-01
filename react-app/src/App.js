@@ -15,7 +15,7 @@ function App() {
   }
 
   return (
-    <Container fluid className='vh-100'>
+    <Container fluid className='vh-100 border'>
       <Row id='drum-machine' className='h-50 m-5 w-25 bg-light border border-dark justify-content-center align-items-center mx-auto shadow rounded'>
         <Row className=''>
           <p className='monospace rounded w-50 text-center border '>POWERSYNTHS 3000</p>

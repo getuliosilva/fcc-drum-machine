@@ -119,6 +119,8 @@ function PadGroup(props) {
         label={element.label}
         soundFile={element.soundFile}
         isClicked={element.isClicked}
+        handleDisplay={()=>{props.handleDisplay(element.instrument)}}
+        returnDisplay={()=>{props.handleDisplay('## POWERSYNTHS 3000 ##')}}
       />
   })
 
